@@ -1,0 +1,23 @@
+# Apache .htaccess for clean URLs
+# This file should be placed in /var/www/sheet.homes/
+
+RewriteEngine On
+RewriteBase /
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect .html to clean URL (301 permanent redirect)
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1? [NC,L,R=301]
+
+# Handle index
+DirectoryIndex index.html
+
+# Security: Deny access to hidden files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+

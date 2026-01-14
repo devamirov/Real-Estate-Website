@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sheet Homes</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/jpeg" href="/sheet.jpg">
+  <link href="sheet.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Carousel Fix -->
+  <style>
+    .hero .carousel-inner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 100vh;
+    }
+    .hero .carousel-item img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      display: block;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: EstateAgency
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Updated: Aug 09 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="sheet.jpg" alt="Sheet Homes Logo" class="logo-img me-2">
+        <h1 class="sitename">Sheet<span> Homes</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/properties">Properties</a></li>
+          <li><a href="/founder">Founder</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide" data-bs-interval="5000">
+        <div id="hero-carousel-inner" class="carousel-inner">
+          <!-- Hero items will be loaded dynamically from featured properties -->
+          <div class="carousel-item active">
+            <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+            <div class="carousel-container">
+              <div>
+                <p>Loading...</p>
+                <h2><span>Featured</span> Properties</h2>
+                <a href="/properties" class="btn-get-started">View All Properties</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>We provide comprehensive real homes services to help you find your perfect property</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="/service-details?service=sales-rentals" class="stretched-link">
+                <h3>Property Sales & Rentals</h3>
+              </a>
+              <p>Expert assistance in buying, selling, and renting properties. Find your ideal space with flexible lease options and professional guidance.</p>
+              <a href="/service-details?service=sales-rentals" class="read-more">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="/service-details?service=management" class="stretched-link">
+                <h3>Property Listing</h3>
+              </a>
+              <p>Quickly list your property and reach qualified buyers fast.</p>
+              <a href="/service-details?service=management" class="read-more">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="/service-details?service=valuation" class="stretched-link">
+                <h3>Property Management & Valuation</h3>
+              </a>
+              <p>Professional property management and accurate valuations to maximize your investment value.</p>
+              <a href="/service-details?service=valuation" class="read-more">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="/service-details?service=legal" class="stretched-link">
+                <h3>Legal Support</h3>
+              </a>
+              <p>Professional legal assistance for property transactions, contracts, and documentation to ensure smooth and secure deals.</p>
+              <a href="/service-details?service=legal" class="read-more">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog section">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="section-title mb-2">
+              <h2>Properties & Listings</h2>
+              <p>Browse our marketplace for available property offers.</p>
+            </div>
+            <div class="catalog-description-box" style="margin-bottom: 48px;">
+              <svg class="property-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 21V8L12 3L21 8V21H3Z" stroke="#DCF763" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 21V12H15V21" stroke="#DCF763" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 12H17" stroke="#DCF763" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="9" cy="9" r="1" fill="#DCF763"/>
+                <circle cx="15" cy="9" r="1" fill="#DCF763"/>
+              </svg>
+              <p>Browse our comprehensive property catalog featuring residential and commercial properties. Find your perfect match with detailed listings and professional guidance.</p>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: calc(15px + 3mm);">
+              <a href="/properties" class="btn-know-more">Browse Properties <i class="bi bi-arrow-right"></i></a>
+              <a href="/contact" class="btn-know-more btn-rounded">List Your Property <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Catalog Section -->
+
+    <!-- Agents Section -->
+    <section id="agents" class="agents section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Founder</h2>
+        <p>Meet our experienced team dedicated to providing exceptional real homes services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="msheet.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Mustapha Sheet</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-auto">
+            <a href="/founder" class="btn-know-more">Know More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Agents Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>See what our satisfied clients have to say about their experience with us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Working with Sheet Homes was an exceptional experience. They helped us find the perfect home and guided us through every step of the process with professionalism and care.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>George Saba</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  The team at Sheet Homes made our property search effortless. Their expertise and attention to detail ensured we found exactly what we were looking for in record time.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Khalifeh</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  I highly recommend Sheet Homes for anyone looking to buy or sell property. Their market knowledge and negotiation skills resulted in an excellent deal for us.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Mohamad Jaber</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Professional, reliable, and genuinely caring about their clients. Sheet Homes exceeded our expectations and made our real homes journey smooth and stress-free.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Toni Jabbour</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Outstanding service from start to finish. Sheet Homes understands the market deeply and provides honest, valuable advice that helped us make the right investment decision.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>Fadi Salameh</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- App Download Section -->
+    <section id="app-download" class="app-download section">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3 class="mb-4">Download Our Mobile App</h3>
+            <p class="mb-4 app-coming-soon">Coming soon to iOS and Android</p>
+            <div class="app-badges d-flex justify-content-center align-items-center gap-4 flex-wrap">
+              <a href="https://apps.apple.com" target="_blank" class="app-badge">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1289433600" alt="Download on the App Store" class="app-store-badge">
+              </a>
+              <a href="https://play.google.com" target="_blank" class="app-badge">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="google-play-badge">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /App Download Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 col-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>+961 81 923 292</span><br>
+              <strong>Email:</strong> <span>sheet.estate@yahoo.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="tiktok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Fri:</strong> <span>11AM - 6PM</span><br>
+              <strong>Saturday</strong>: <span>11AM - 3PM</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>Saint Therese, Hadath, Lebanon</p>
+            <p></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sheet Homes</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Load featured properties for hero carousel
+    fetch('/api/properties.php?featured=1')
+      .then(response => response.json())
+      .then(properties => {
+        const carouselInner = document.getElementById('hero-carousel-inner');
+        const carousel = document.querySelector('#hero-carousel');
+        const carouselIndicators = document.querySelector('#hero-carousel .carousel-indicators');
+        
+        if (properties.length === 0) {
+          // Fallback to default if no featured properties
+          return;
+        }
+        
+        // Destroy existing carousel instance if it exists
+        if (carousel && window.bootstrap) {
+          const existingCarousel = bootstrap.Carousel.getInstance(carousel);
+          if (existingCarousel) {
+            existingCarousel.dispose();
+          }
+        }
+        
+        // Clear existing content
+        carouselInner.innerHTML = '';
+        if (carouselIndicators) {
+          carouselIndicators.innerHTML = '';
+        }
+        
+        // Build carousel items
+        properties.forEach((property, index) => {
+          const isActive = index === 0 ? 'active' : '';
+          const price = property.price ? ` | ${property.price}` : '';
+          const titleParts = property.title.split(' ');
+          const firstPart = titleParts[0] || '';
+          const restTitle = titleParts.slice(1).join(' ') || property.title;
+          
+          const carouselItem = document.createElement('div');
+          carouselItem.className = `carousel-item ${isActive}`;
+          
+          // Ensure image path has leading slash
+          const imagePath = property.image_path.startsWith('/') ? property.image_path : '/' + property.image_path;
+          const fallbackImage = `/assets/img/hero-carousel/hero-carousel-${(index % 3) + 1}.jpg`;
+          
+          // Create image element separately to handle loading
+          const img = document.createElement('img');
+          img.src = imagePath;
+          img.alt = property.title;
+          img.onerror = function() {
+            this.onerror = null;
+            this.src = fallbackImage;
+          };
+          
+          carouselItem.appendChild(img);
+          
+          const carouselContainer = document.createElement('div');
+          carouselContainer.className = 'carousel-container';
+          carouselContainer.innerHTML = `
+            <div>
+              <p>${property.subtitle || ''}</p>
+              <h2><span>${firstPart}</span> ${restTitle}</h2>
+              <a href="/property-single?id=${property.id}" class="btn-get-started">${property.status.toLowerCase()}${price}</a>
+            </div>
+          `;
+          carouselItem.appendChild(carouselContainer);
+          
+          carouselInner.appendChild(carouselItem);
+          
+          // Create indicator
+          if (carouselIndicators) {
+            const indicator = document.createElement('li');
+            indicator.setAttribute('data-bs-target', '#hero-carousel');
+            indicator.setAttribute('data-bs-slide-to', index);
+            if (index === 0) {
+              indicator.classList.add('active');
+            }
+            carouselIndicators.appendChild(indicator);
+          }
+        });
+        
+        // Initialize Bootstrap carousel with autoplay
+        if (carousel && window.bootstrap) {
+          // Remove data-bs-ride to prevent auto-init
+          carousel.removeAttribute('data-bs-ride');
+          
+          const bsCarousel = new bootstrap.Carousel(carousel, {
+            interval: 5000,
+            ride: 'carousel',
+            wrap: true,
+            keyboard: true,
+            pause: false
+          });
+          
+          // Ensure carousel is cycling and start autoplay
+          bsCarousel.cycle();
+          
+          // Force autoplay to start
+          setTimeout(() => {
+            if (bsCarousel._interval === null) {
+              bsCarousel.cycle();
+            }
+          }, 100);
+        }
+      })
+      .catch(error => {
+        console.error('Error loading featured properties:', error);
+      });
+  </script>
+
+</body>
+
+</html>

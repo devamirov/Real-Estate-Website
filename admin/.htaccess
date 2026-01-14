@@ -1,0 +1,56 @@
+# Admin Panel Security
+# Deny direct access to config file
+<Files "config.php">
+    Require all denied
+</Files>
+
+# Optional: Restrict access by IP (uncomment and add your IP)
+# <RequireAll>
+#     Require ip 127.0.0.1
+#     Require ip YOUR_IP_ADDRESS
+# </RequireAll>
+
+# Prevent directory listing
+Options -Indexes
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Clean URLs - Remove .php extension and handle routing
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /admin/
+    
+    # Redirect .php to clean URL (external redirect)
+    RewriteCond %{THE_REQUEST} /admin/([^?\s]*?)\.php[\s?] [NC]
+    RewriteRule ^ /admin/%1? [R=301,L]
+    
+    # Handle clean URLs (internal rewrite)
+    # Route /admin/ or /admin to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^$ index.php [L,QSA]
+    
+    # Route /admin/login to login.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^login/?$ login.php [L,QSA]
+    
+    # Route /admin/logout to logout.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^logout/?$ logout.php [L,QSA]
+    
+    # Route /admin/property-form to property-form.php (with optional query string)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^property-form/?$ property-form.php [L,QSA]
+</IfModule>
+
+# Set directory index
+DirectoryIndex index.php
+
