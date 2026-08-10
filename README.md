@@ -1,6 +1,10 @@
-# Real Estate Website
+<p align="center">
+  <img src="./assets/Real-Estate-Website-logo.php" width="180">
+</p>
 
-**Type:** Real estate marketing website  
+<h1 align="center">Real Estate Website</h1>
+
+**Type:** Real estate website  
 **Stack:** HTML, CSS, JS  
 **Live:** https://sheet.homes  
 
