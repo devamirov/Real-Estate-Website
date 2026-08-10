@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/Real-Estate-Website-logo.php" width="180">
+  <img src="./assets/Real-Estate-Website-logo.jpg" width="180">
 </p>
 
 <h1 align="center">Real Estate Website</h1>
